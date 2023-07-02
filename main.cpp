@@ -1,6 +1,7 @@
 #include "Sort.h"
 #include "BubbleSort.h"
 #include "QuickSort.h"
+#include "Another.h"
 
 int main (){ 
     ISort *sort = new BubbleSort();
