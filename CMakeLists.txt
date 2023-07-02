@@ -27,6 +27,8 @@ add_library(sort SHARED ${SORT_SOURCES})
 # Set include directories for SORT
 target_include_directories(sort PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/sort" "${CMAKE_CURRENT_SOURCE_DIR}/base")
 
+# Set the output directory for the library
+set_target_properties(sort PROPERTIES LIBRARY_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/bin")
 
 # Create the main executable
 add_executable(MainApp ${MAINAPP_SOURCES})
